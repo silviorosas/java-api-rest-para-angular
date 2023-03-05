@@ -7,19 +7,13 @@ package springboot.EjemploSpringboot22.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import springboot.EjemploSpringboot22.model.Banco;
-import springboot.EjemploSpringboot22.model.Producto;
-
-import java.util.List;
+import springboot.EjemploSpringboot22.model.Tasa;
 
 /**
  *
- * @author Soda
+ * @author sodac
  */
-
 @Repository
-public interface ProductoRepo extends JpaRepository<Producto, Integer>{
-
-    List<Producto> findBynombre (String nombre);
+public interface TasaRepo extends JpaRepository<Tasa, Integer>{
     
 }
